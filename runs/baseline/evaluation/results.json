@@ -1,0 +1,53 @@
+{
+  "metrics": {
+    "loss": 0.3741799217943484,
+    "top1": 90.2085222121487,
+    "top5": 99.72801450589301,
+    "macro_f1": 0.9005898183203803
+  },
+  "checkpoint_epoch": 2,
+  "val_metrics": {
+    "loss": 0.3384743961361921,
+    "top1": 92.28675136116152,
+    "top5": 99.54627949183303,
+    "macro_f1": 0.9217791784821725
+  },
+  "confusion_pairs": [
+    [
+      8,
+      "Bengal",
+      "Egyptian Mau",
+      1,
+      7
+    ],
+    [
+      8,
+      "American Pit Bull Terrier",
+      "Staffordshire Bull Terrier",
+      7,
+      1
+    ],
+    [
+      5,
+      "Chihuahua",
+      "Miniature Pinscher",
+      5,
+      0
+    ]
+  ],
+  "cases": {
+    "correct": {
+      "test_index": 0,
+      "global_index": 1839,
+      "true": "Yorkshire Terrier",
+      "pred": "Yorkshire Terrier"
+    },
+    "wrong": {
+      "test_index": 10,
+      "global_index": 292,
+      "true": "Bengal",
+      "pred": "Maine Coon"
+    }
+  },
+  "n_test": 1103
+}
