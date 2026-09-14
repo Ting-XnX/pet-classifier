@@ -1,0 +1,22 @@
+{
+  "root": "datasets",
+  "output": "runs/label_smoothing",
+  "split": "runs/split.json",
+  "epochs": 10,
+  "batch_size": 32,
+  "seed": 42,
+  "workers": 4,
+  "label_smoothing": 0.1,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.8.0+cu128",
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "split_sizes": {
+    "train": 5144,
+    "val": 1102,
+    "test": 1103
+  }
+}
