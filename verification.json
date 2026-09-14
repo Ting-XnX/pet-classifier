@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "split_sizes": {
+    "train": 5144,
+    "val": 1102,
+    "test": 1103
+  },
+  "checks": [
+    "disjoint stratified split",
+    "deterministic evaluation transforms",
+    "ResNet feature and logits dimensions",
+    "finite Grad-CAM",
+    "known perfect predictions"
+  ]
+}

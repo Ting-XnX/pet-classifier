@@ -1,0 +1,16 @@
+[
+  {
+    "experiment": "baseline",
+    "epochs": 10,
+    "tensorboard": "passed",
+    "metrics": "passed",
+    "checkpoint_selection": "passed"
+  },
+  {
+    "experiment": "label_smoothing",
+    "epochs": 10,
+    "tensorboard": "passed",
+    "metrics": "passed",
+    "checkpoint_selection": "passed"
+  }
+]

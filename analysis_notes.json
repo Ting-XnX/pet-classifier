@@ -1,0 +1,18 @@
+{
+  "bug": "我在 AI 辅助代码中发现 CUDA 判断不充分：最初仅用 torch.cuda.is_available() 选择显卡。pearl 环境虽返回 True，但 CUDA 12.6 构建不支持 RTX 5060，实际运算报 no kernel image。我用最小张量运算定位问题，改用已有 pearl_gpu（CUDA 12.8），并在 select_device 中加入实际运算与同步检查。复测时不兼容环境明确报错，兼容环境通过。",
+  "cases": {
+    "correct": {
+      "test_index": 0,
+      "global_index": 1839,
+      "true": "Yorkshire Terrier",
+      "pred": "Yorkshire Terrier"
+    },
+    "wrong": {
+      "test_index": 10,
+      "global_index": 292,
+      "true": "Bengal",
+      "pred": "Egyptian Mau"
+    }
+  },
+  "cam": "我观察到，正确的约克夏犬案例中，热区主要覆盖眼鼻、口部和脸部毛发，背景响应较弱。错误的孟加拉猫案例中，热区仍集中于额头和眼周；图像脸部偏亮，躯干斑纹几乎不可见。因此，这次误判更提示近似品种的面部特征区分不足，而非明显依赖背景。热力图不能证明因果；我还需要更多案例验证这一解释。"
+}

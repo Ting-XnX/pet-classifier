@@ -1,0 +1,10 @@
+*.pdf binary
+*.png binary
+*.pth binary
+*.zip binary
+events.out.tfevents.* binary
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf

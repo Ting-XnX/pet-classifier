@@ -1,0 +1,7 @@
+{
+  "source": "https://s3.amazonaws.com/fast-ai-imageclas/oxford-iiit-pet.tgz",
+  "archive_sha256": "3f1b76957366427dd5c12e3d48488be28dabd99a403bdb2b5100a83b9fd162d4",
+  "official_annotations_md5": "95a8c909bbe2e81eed6a22bccdf3f68f",
+  "annotations_match": true,
+  "labeled_images": 7349
+}

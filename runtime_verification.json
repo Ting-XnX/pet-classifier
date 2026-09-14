@@ -1,0 +1,14 @@
+[
+  {
+    "environment": "pearl",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "<pearl>/lib\\site-packages\\torch\\cuda\\__init__.py:283: UserWarning: \n    Found GPU0 NVIDIA GeForce RTX 5060 Laptop GPU which is of cuda capability 12.0.\n    Minimum and Maximum cuda capability supported by this version of PyTorch is\n    (6.1) - (9.0)\n    \n  warnings.warn(\n<pearl>/lib\\site-packages\\torch\\cuda\\__init__.py:304: UserWarning: \n    Please install PyTorch with a following CUDA\n    configurations:  12.8 12.9 following instructions at\n    https://pytorch.org/get-started/locally/\n    \n  warnings.warn(matched_cuda_warn.format(matched_arches))\n<pearl>/lib\\site-packages\\torch\\cuda\\__init__.py:326: UserWarning: \nNVIDIA GeForce RTX 5060 Laptop GPU with CUDA capability sm_120 is not compatible with the current PyTorch installation.\nThe current PyTorch install supports CUDA capabilities sm_61 sm_70 sm_75 sm_80 sm_86 sm_90.\nIf you want to use the NVIDIA GeForce RTX 5060 Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n\n  warnings.warn(\nTraceback (most recent call last):\n  File \"<project>/utils\\runtime.py\", line 8, in select_device\n    probe=torch.ones(1,device='cuda')\ntorch.AcceleratorError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<project>/utils\\runtime.py\", line 13, in select_device\n    raise RuntimeError(\nRuntimeError: CUDA 驱动可见，但 PyTorch 无法在当前显卡执行运算。请使用支持该显卡架构的 PyTorch 构建；RTX 5060 本实验验证使用 CUDA 12.8 构建。\n"
+  },
+  {
+    "environment": "pearl_gpu",
+    "returncode": 0,
+    "stdout": "cuda\n",
+    "stderr": ""
+  }
+]
